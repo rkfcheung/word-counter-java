@@ -23,7 +23,12 @@ repositories {
 }
 
 dependencies {
+    val armeriaVersion = "1.27.2"
+
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
+    implementation(platform("com.linecorp.armeria:armeria-bom:$armeriaVersion"))
+    implementation("com.linecorp.armeria:armeria-spring-boot2-webflux-starter")
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
