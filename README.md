@@ -17,9 +17,9 @@ cd word-counter-java
 
 ## Usage
 
-```java
-final Translator translator= // ... implementation of Translator ...
-final WordCounter wordCounter=new WordCounterImpl(translator);
+```none
+final Translator translator = // ... implementation of Translator ...
+final WordCounter wordCounter = new WordCounterImpl(translator);
 
 // ... Add words ...
         wordCounter.add("flower");
